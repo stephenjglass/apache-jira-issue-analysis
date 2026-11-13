@@ -63,15 +63,3 @@ So the original is in the top 10 about two thirds of the time, out of roughly 2,
 | `05_kafka_bert_tuning.ipynb` | BERT over 3 learning rates x 2 epoch settings |
 | `06_zookeeper_duplicate_detection.ipynb` | Ranks earlier issues by text similarity to find the original of a duplicate (TF-IDF vs MiniLM embeddings) |
 
-## Running them
-
-The easiest way is Google Colab, since the notebooks were written there.
-
-1. Go to https://colab.research.google.com, then File > Open notebook > GitHub.
-2. Paste `stephenjglass/apache-jira-issue-analysis` and pick a notebook.
-3. For 02, 04, 05 and 06 switch on the GPU first: Runtime > Change runtime type > T4 GPU.
-4. Runtime > Run all.
-
-Each notebook installs what it needs in its first cell and downloads its own data, so there is nothing to set up. Downloading all the Kafka issues takes a few minutes. The BERT notebooks are the slow ones, and the tuning notebook trains BERT six times.
-
-To run locally instead: `pip install -r requirements.txt` and open the notebooks in Jupyter. A GPU is needed for the BERT ones to finish in reasonable time.
