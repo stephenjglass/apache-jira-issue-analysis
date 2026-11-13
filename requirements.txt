@@ -1,0 +1,11 @@
+jira
+pandas
+numpy
+scikit-learn
+torch
+transformers
+gensim
+sentence-transformers
+matplotlib
+pyvis
+tqdm
